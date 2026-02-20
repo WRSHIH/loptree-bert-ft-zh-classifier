@@ -126,20 +126,3 @@ pred  = sum(cdf <= 0.5) + 1   # 1-based star rating
 | `early_stopping.patience` | `3` | Epochs without improvement before stopping |
 
 ---
-
-## Supported Backbone Models
-
-Any Chinese-language model on HuggingFace can be dropped in via `model.pretrained_name`:
-
-| Model ID | Notes |
-|----------|-------|
-| `bert-base-chinese` | Solid baseline |
-| `hfl/chinese-roberta-wwm-ext` | Consistently stronger on most Chinese tasks |
-| `hfl/chinese-macbert-base` | MLM with masked correction, often best |
-| `IDEA-CCNL/Erlangshen-Roberta-110M-Sentiment` | Sentiment-specialised |
-
----
-
-## License
-
-MIT
