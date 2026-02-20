@@ -1,0 +1,26 @@
+# bert_rating_classifier/requirements.txt
+# Pin minor versions for reproducibility; update deliberately.
+
+# ── Deep learning core ────────────────────────────────────────────────────────
+torch>=2.2.0
+transformers>=4.40.0
+datasets>=3.0.0
+accelerate>=0.29.0          # Optional but recommended for multi-GPU/mixed precision
+
+# ── NLP & tokenisation ────────────────────────────────────────────────────────
+sentencepiece>=0.2.0        # Required by some tokenizers (e.g. mBERT variants)
+
+# ── Data science stack ────────────────────────────────────────────────────────
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+
+# ── Progress & visualisation ──────────────────────────────────────────────────
+tqdm>=4.66.0
+matplotlib>=3.8.0
+
+# ── Google Maps scraper (optional — only needed for data collection) ──────────
+googlemaps>=4.10.0
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0        # Optionally load GMAPS_API_KEY from a .env file

@@ -1,0 +1,38 @@
+{
+  "model": {
+    "pretrained_name": "bert-base-chinese",
+    "num_labels": 5,
+    "hidden_dropout_prob": 0.1,
+    "classifier_hidden_size": 256,
+    "classifier_dropout": 0.3
+  },
+  "tokenizer": {
+    "max_length": 128,
+    "padding": "max_length",
+    "truncation": true
+  },
+  "training": {
+    "epochs": 10,
+    "train_batch_size": 16,
+    "val_batch_size": 1024,
+    "learning_rate": 2e-5,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.05,
+    "val_split": 0.2,
+    "seed": 42
+  },
+  "early_stopping": {
+    "min_train_accuracy": 0.90,
+    "patience": 3
+  },
+  "paths": {
+    "train_data": "data/Train_data1.jsonl",
+    "checkpoint_dir": "checkpoints",
+    "best_model_name": "best_model.pth",
+    "saved_model_dir": "saved_model"
+  },
+  "loss": {
+    "type": "weighted_emd",
+    "emd_r": 2
+  }
+}
