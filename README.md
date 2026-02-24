@@ -1,13 +1,15 @@
 # BERT Rating Classifier
-<div align="center">
 A production-grade Chinese restaurant review → star-rating classifier built on top of `bert-base-chinese`, using a custom **Weighted Earth Mover's Distance (EMD)** loss for ordinal regression.
 
+
+<div align="center">
 <p>
     <a href="https://huggingface.co/spaces/loptree/Traditional-Chinese-Comment-Rating">
       <img src="https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg" alt="Open in Hugging Face Spaces">
     </a>
 </p>
 </div>
+
 ---
 
 ## Project Structure
